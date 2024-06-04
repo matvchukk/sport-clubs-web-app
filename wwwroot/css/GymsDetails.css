@@ -1,0 +1,106 @@
+﻿body{
+    height: 100%;
+}
+
+.card-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+img{
+    max-width: 100%;
+    display: block;
+}
+.card {
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    background-color: #333;
+    color: #fff;
+    flex: 1 0 21%; /* Розмір картки. Ви можете змінити це значення відповідно до своїх потреб */
+    margin: 1%; /* Відступ між картками */
+}
+
+    .card img {
+        max-width: 100%;
+        height: 200px; /* Задаємо фіксовану висоту */
+        object-fit: cover; /* Забезпечуємо, що зображення відповідає своїй області без спотворень */
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+    }
+
+.card-body {
+    padding: 15px;
+}
+
+.card-title {
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.card-text {
+    font-size: 18px;
+    color: #777;
+}
+
+.tooltip{
+    color: black;
+    border-bottom: 1px dashed #fff;
+    position: relative;
+    cursor: pointer;
+    z-index: 1;
+}
+
+    .tooltip:before {
+        display: block;
+        width: 200px;
+        background: #777;
+        bottom: 30px;
+        left: 50%;
+        margin-left: -100px;
+        padding: 10px;
+        box-sizing: border-box;
+        content: attr(data-tooltip);
+        position: absolute;
+        opacity: 0;
+    }
+
+.tooltip:hover:before {
+    opacity: 1;
+}
+
+.btn-primary {
+    font-weight: 600;
+    color: white;
+    background-color: #0071fc;
+    border-color: violet;
+}
+
+    .btn-primary:hover {
+        color: white;
+        background-color: darkviolet;
+        border-color: darkviolet;
+    }
+
+    .btn-primary:focus {
+        box-shadow: 0 0 0 0.25rem rgba(138, 43, 226, 0.5);
+    }
+
+    .btn-primary:active {
+        color: white;
+        background-color: darkviolet;
+        border-color: darkviolet;
+    }
+
+.gymimg img {
+    width: 800px;
+    height: 480px; /* Задаємо фіксовану висоту */
+    object-fit: cover; /* Забезпечуємо, що зображення відповідає своїй області без спотворень */
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    object-fit: cover;
+    object-position: 0 0;
+}
+
+
